@@ -24,7 +24,7 @@ app.set ("view engine", "ejs");
 //LANDING PAGE
 //----------------------------------------
 app.get ("/" , function(req, res){
-	res.redirect("../EN/views/landing");
+	res.render("../EN/views/landing");
 	
 });
 
@@ -474,6 +474,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 //----------------------------------------
 //SERVER LISTEN
 //----------------------------------------
-app.listen(3000, function() { 
-  console.log ("Server is Running, lil' bitch");
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
 });
