@@ -11,9 +11,9 @@ var upload = multer({dest: './public/uploads/'});
 var fs = require("fs");
 
 paypal.configure({
-  'mode': 'sandbox', //sandbox or live
-  'client_id': 'AQW_EAdj_C29XB0HbjWyGTw7oJuonOwipeKII4pd9sbdG8dOD8FLfP1hCBkvLMtozs33fd836s6ZJVeR',
-  'client_secret': 'EKVTppoHOK5FfyYtsJoVm0_THM1nBpygztITn2MYwLE67amBbBma2YZsARgjMCCl69QQv6GDyA57SQkG'
+  'mode': 'live', //sandbox or live
+  'client_id': 'AelmGWVHUzj1CNuzPNtaAbeQBHtY9gT9lJQ-Dqy9N2hVna7GeaesCK9H23werl6kU3bNYonHErv3il66',
+  'client_secret': 'ELLp7d2dnfQUNEjYI39EKccW_QqTESFjxXIRIdDAG4jtbKszZDH-sRJHqT46V31XnzRvn3BIdfURYai8'
 });
 
 var urlencodedParser = bodyParser.urlencoded({ extended: true })
