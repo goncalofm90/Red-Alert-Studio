@@ -1,0 +1,36 @@
+<%- include("partials/header") %>
+<hr id="mediahr">
+<h1  class="fade-in contactformheader text-center">HIRE RED ALERT STUDIO</h1>
+<hr id="mediahr">
+
+
+
+<div class="fade-in serviceform text-center container">
+<p class="text-center">Please fill in this form to order your drum track.</p>
+<p class="text-center">The price per drum track is 100 € . By ordering your drum track online, you will have 10% off the second half value.</p>
+<p class="text-center">IMPORTANT NOTE: This form is for DRUM TRACKS only, if you wish to order a track which includes another instrument, please contact us via "Contact & Support"</p>
+<form method="POST" action="/services" enctype="multipart/form-data">
+  <div class="form-group">
+    <input type="text" name="name" class="contactform" id="exampleFormControlInput1" placeholder=" First and last name" required>
+	 <input type="text" name="paypal" class="contactform" id="exampleFormControlInput1" placeholder="Paypal Account" required>
+    <input type="email" name="email" class="contactform" id="exampleFormControlInput1" placeholder=" Email@example.com" required>
+    <input type="text" name="track" class="contactform" id="exampleFormControlInput1" placeholder=" Track Name" required>
+    <input type="number" name="number" class="contactform" id="exampleFormControlInput1" placeholder=" +351919999999" required>
+	<div class="form-group">
+	<input type="number" name="tempo" class="contactform" id="exampleFormControlInput1" placeholder=" Input track tempo" max ="280" required>
+	<input type="text" name="signature" class="contactform" id="exampleFormControlInput1" placeholder=" Input time signature">
+	<input type="text" name="sampleRate" class="contactform" id="exampleFormControlInput1" placeholder=" Sample rate (e.g. 24bit 48khz)" 			required>
+	 <textarea class="contactform" name="message" id="exampleFormControlTextarea1" rows="3" required placeholder =" Provide a summary description and/or any links to songs that best match the type of track you desire."></textarea>
+	<label class="contactform"for="file">Make sure you include an mp3 sample of your song below.</label>	
+	<input type="file" name="file" class="contactform" id="file" placeholder="Upload mp3 sample" required>
+   
+  			</div>
+  		</div> 
+	<div class="text-center">
+		<button type="submit" class="btn btn-outline-danger">Proceed to Checkout</button>
+</div>
+		
+
+
+	
+<%- include("partials/footer") %>

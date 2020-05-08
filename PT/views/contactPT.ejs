@@ -1,0 +1,26 @@
+<%- include("partials/headerPT") %>
+<hr id="mediahr">
+<h1 class="fade-in contactformheader text-center">CONTACTA A RED ALERT STUDIO OU KAE SANTOS</h1>
+<hr id="mediahr">
+
+<div class="fade-in serviceform text-center container form-group">
+	<form method ="POST" action = "/contact">
+	<p class=" text-center">Touring | Gravações | Sessões Online | Qualquer outra pergunta</p>
+	<input type="email" name="email" class="contactform" placeholder=" E-mail" required>
+    <input type="text" name="subject" class="contactform" placeholder=" Assunto" required>
+    <input type="text" name="name" class="contactform" placeholder=" Primeiro e último nome" required>
+    <input type="text" name="track" class="contactform" placeholder=" Nome da Faixa" required>
+	<input type="text" name="instrument" class="contactform" placeholder="Faixa de outro instrumento">
+    <input type="number" name="number" class="contactform" placeholder=" +351919999999" required>
+    <textarea class="contactformtext" name="message" placeholder="Escreve a tua mensagem aqui." rows="3" required></textarea>
+	<div class="text-center">
+		<button type="submit" class="btn btn-outline-danger">Contactar</button>		
+	</div>
+	</form>
+<div class ="text-center">
+	<a class="anchor" href="https://www.facebook.com/Kaedrum"><i class="fab fa-facebook-square"></i></a><a class="anchor" href="https://www.instagram.com/kaedrums/"><i class="fab fa-instagram"></i></a>
+<p>Facebook  | | Instagram  </p>
+</div>
+	
+
+<%- include("partials/footerPT") %>

@@ -1,0 +1,220 @@
+
+#navbar{
+      background-color: black;
+  }
+
+#subbrand {
+	font-size: 12px;
+}
+
+
+#servicesheader {
+	color:white;
+	margin-top: 10px;
+}
+
+
+
+#spotify {
+	 width: 100%;
+	height: 80px;
+	
+}
+
+#youtube {
+	width:100%;
+}
+
+#mediahr{
+	border: 2px solid white;
+	margin-top: 20px;
+}
+
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+@-ms-viewport {
+  width: device-width ;
+}
+
+.about1 {
+	color: white;
+	background-color: rgba(0,0,0,0.9);
+	margin: 20px;
+}
+
+.about2 {
+	color: white;
+	background-color: rgba(0,0,0,0.9)
+	
+}
+
+.anchor {
+	color: white;
+}
+
+.brandimg {
+	height: 60px;
+	width: 90px;
+}
+
+.custom-file-label {
+	background-color: transparent;
+}
+
+
+.contactformheader {
+	background-color: rgba(0,0,0,0.9);
+	margin-bottom: 20px;
+}
+
+.contactformheader2 {
+	background-color: rgba(0,0,0,0.9);
+	margin-bottom: 20px;
+}
+
+.contactform {
+	background-color: transparent;
+	border: 1px solid white;
+	width: 60%;
+	color: white;
+}
+
+.contactformtext {
+	background-color: transparent;
+	border: 1px solid white;
+	color: white;
+	width: 60%;
+	height: 80%;
+}
+
+.custom-file-label{
+	width: 500px;
+	justify-content: center;
+}
+
+.fab {
+	font-size: 50px;
+	margin: 10px;
+}
+
+.fab:hover{
+color: #dc3545;
+}
+
+.fade-in {
+animation: fadeIn ease 1s;
+-webkit-animation: fadeIn ease 1s;
+-moz-animation: fadeIn ease 1s;
+-o-animation: fadeIn ease 1s;
+-ms-animation: fadeIn ease 1s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+.gallery {
+	width: 320px;
+	height: 240px;
+	border: solid 4px white;
+	margin: 10px;
+}
+
+.gallery:hover {
+	border: solid 4px #dc3545;
+}
+
+.imgservice {
+	height:50px;
+	width: 150px;
+}
+
+
+.media {
+	background-color: black;
+	padding: 10px;
+}
+
+.media2 {
+	background-color: rgba(0,0,0,0.9);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: #dc3545 ;
+}
+
+
+
+
+.serviceform {
+	background-color: rgba(0,0,0,0.9);
+	padding: 10px;
+}
+
+.trademark,  .footerlink {
+	color: white;
+	font-family: Abel;
+}
+
+.trademark:hover ,  .footerlink:hover {
+	color: #dc3545;
+	font-family: Abel;
+}
+
+.videopadding {
+	
+	margin: 20px;
+}
+
+body {
+	color: white;
+	font-family: Abel;
+	display:inline-block;
+    position:absolute;
+    width: 100%;
+ 
+    background: url("https://i.ibb.co/44HTnyV/image.png") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	background-color:black;
+	min-height: 100%;
+	
+}
+
+.jumbotron {
+	background-color: rgba(0,0,0,0.9)
+}
+
+.faceinsta {
+	display: inline-block;
+	margin-top: 20px;
+}
+
+
+
+

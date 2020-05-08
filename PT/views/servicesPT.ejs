@@ -1,0 +1,36 @@
+<%- include("partials/headerPT") %>
+<hr id="mediahr">
+<h1  class="fade-in contactformheader text-center">CONTRATAR A RED ALERT STUDIO</h1>
+<hr id="mediahr">
+
+
+
+<div class="fade-in serviceform text-center container">
+<p class="text-center">Por favor preenche este formulário para encomendares a tua faixa.</p>
+<p class="text-center">O preço por faixa de bateria são 100 € . Ao encomendares a tua faixa no website, tens 10% de desconto na segunda metade do valor.</p>
+<p class="text-center">IMPORTANTE: Este formulário é apenas para FAIXAS DE BATERIA, se pretendes requisitar uma faixa de outro instrumento para a tua música, por favor contacta-nos em "Contacto & Suporte".</p>
+<form method="POST" action="/servicesPT" enctype="multipart/form-data">
+  <div class="form-group">
+    <input type="text" name="name" class="contactform" id="exampleFormControlInput1" placeholder=" Primeiro e ultimo nome" required>
+	 <input type="text" name="paypal" class="contactform" id="exampleFormControlInput1" placeholder=" Conta de Paypal" required>
+    <input type="email" name="email" class="contactform" id="exampleFormControlInput1" placeholder=" Email@example.com" required>
+    <input type="text" name="track" class="contactform" id="exampleFormControlInput1" placeholder=" Nome da Faixa" required>
+    <input type="number" name="number" class="contactform" id="exampleFormControlInput1" placeholder=" +351919999999" required>
+	<div class="form-group">
+	<input type="number" name="tempo" class="contactform" id="exampleFormControlInput1" placeholder=" Tempo da faixa" max ="280" required>
+	<input type="text" name="signature" class="contactform" id="exampleFormControlInput1" placeholder=" Compasso da faixa">
+	<input type="text" name="sampleRate" class="contactform" id="exampleFormControlInput1" placeholder=" Sample rate (e.g. 24bit 48khz) da faixa" 			required>
+	 <textarea class="contactform" name="message" id="exampleFormControlTextarea1" rows="3" required placeholder =" Descreve de forma sucinta ou providencia links de exemplo para músicas que melhor exemplificam o tipo de faixa que desejas."></textarea>
+	<label class="contactform"for="file">Certifica-te que incluis um sample em mp3 da tua música em baixo.</label>	
+	<input type="file" name="file" class="contactform" id="file" placeholder="Upload mp3 sample" required>
+   
+  			</div>
+  		</div> 
+	<div class="text-center">
+		<button type="submit" class="btn btn-outline-danger">Proceder para a compra</button>
+</div>
+		
+
+
+	
+<%- include("partials/footerPT") %>
