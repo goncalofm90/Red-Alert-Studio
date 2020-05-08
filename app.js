@@ -24,7 +24,7 @@ app.set ("view engine", "ejs");
 //LANDING PAGE
 //----------------------------------------
 app.get ("/" , function(req, res){
-	res.render("../EN/views/landing");
+	res.redirect("../EN/views/landing");
 	
 });
 
