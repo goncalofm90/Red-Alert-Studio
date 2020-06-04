@@ -12,8 +12,8 @@ var fs = require("fs");
 
 paypal.configure({
   'mode': 'live', //sandbox or live
-  'client_id': 'AelmGWVHUzj1CNuzPNtaAbeQBHtY9gT9lJQ-Dqy9N2hVna7GeaesCK9H23werl6kU3bNYonHErv3il66',
-  'client_secret': 'ELLp7d2dnfQUNEjYI39EKccW_QqTESFjxXIRIdDAG4jtbKszZDH-sRJHqT46V31XnzRvn3BIdfURYai8'
+  'client_id': 'clientidhere',
+  'client_secret': 'clientsecrethere'
 });
 
 var urlencodedParser = bodyParser.urlencoded({ extended: true })
@@ -84,12 +84,12 @@ app.get ("/servicesPT" , function(req, res){
 app.post ("/services" , urlencodedParser, upload.single("file"),  function(req, res){
 	
 	const transporter = nodemailer.createTransport({
-  host: 'mail.redalertstudio.com',
+  host: 'host',
   port: 465,
   secure: true,
   auth: {
-    user: 'services@redalertstudio.com',
-    pass: 'marisadaniela27' // naturally, replace both with your real credentials or an application-specific password
+    user: 'user',
+    pass: 'password' // naturally, replace both with your real credentials or an application-specific password
   }
 });
 
@@ -112,7 +112,7 @@ var file = req.file.originalname;
 const mailOptions = {
   from: email,
   subject: track,
-  to: "services@redalertstudio.com",
+  to: "mail",
   html: 
 	"<p>Hello Red Alert Studios,</p>" + name + " has purchased a drum track for his/her track with the account " + paypal+ "." + "<p>The track is named"  + "\"" + track + "\"" + "." + "<p>The tempo is " + tempo + "." + "<p>The signature is " + signature + "." + "<p>The Sample Rate is " + sampleRate + "." + "<p>Please reply to the request by contacting: " + number + "<p>You can also send an e-mail to: " + email + "." + "<p>Here is the song summary/description :</p>" + "\"" + message + "\"" + "<p>Best Regards," + "<p>Your friendly neighborhood Mailbot." + "<p></p>" + '<div class = "container"><img height=250 width=400 src = "https://i.ibb.co/bsmJ7pf/Untitled-copy.png"></div>',
   attachments: [{
@@ -142,12 +142,12 @@ transporter.sendMail(mailOptions, function(error, info){
 app.post ("/servicesPT" , urlencodedParser, upload.single("file"),  function(req, res){
 	
 	const transporter = nodemailer.createTransport({
-  host: 'mail.redalertstudio.com',
+  host: 'host',
   port: 465,
   secure: true,
   auth: {
-    user: 'services@redalertstudio.com',
-    pass: 'marisadaniela27' // naturally, replace both with your real credentials or an application-specific password
+    user: 'user',
+    pass: 'password' // naturally, replace both with your real credentials or an application-specific password
   }
 });
 
@@ -170,7 +170,7 @@ var file = req.file.originalname;
 const mailOptions = {
   from: email,
   subject: track,
-  to: "services@redalertstudio.com",
+  to: "mail",
   html: 
 	"<p>Hello Red Alert Studios,</p>" + name + " has purchased a drum track for his/her track with the account " + paypal+ "." + "<p>The track is named"  + "\"" + track + "\"" + "." + "<p>The tempo is " + tempo + "." + "<p>The signature is " + signature + "." + "<p>The Sample Rate is " + sampleRate + "." + "<p>Please reply to the request by contacting: " + number + "<p>You can also send an e-mail to: " + email + "." + "<p>Here is the song summary/description :</p>" + "\"" + message + "\"" + "<p>Best Regards," + "<p>Your friendly neighborhood Mailbot." + "<p></p>" + '<div class = "container"><img height=250 width=400 src = "https://i.ibb.co/bsmJ7pf/Untitled-copy.png"></div>',
   attachments: [{
@@ -214,12 +214,12 @@ app.get ("/contactPT" , function(req, res){
 //----------------------------------------
 app.post ("/contact" , urlencodedParser,  function(req, res){
 	const transporter = nodemailer.createTransport({
-  host: 'mail.redalertstudio.com',
+  host: 'host',
   port: 465,
   secure: true,
   auth: {
-    user: 'info@redalertstudio.com',
-    pass: 'marisadaniela27' // naturally, replace both with your real credentials or an application-specific password
+    user: 'user',
+    pass: 'password' // naturally, replace both with your real credentials or an application-specific password
   }
 });
 
@@ -235,7 +235,7 @@ var instrument = req.body.instrument;
 const mailOptions = {  
   from: email,
   subject: subject,
-  to: "info@redalertstudio.com",
+  to: "mail",
   html: 
 	"<p>Hello Red Alert Studios,</p>" + name + " has tried to contact you regarding the track(s) " + "\"" + track + "\"" + "." + "<p>They would like a track for a different instrument, namely, " + instrument + "." + 
 	"<p>Please reply to the request by contacting: " + number + "<p>You can also send an e-mail to: " + email + "." + "<p>Here is the message:</p>" + "\"" + message + "\"" + "<p>Best Regards," + "<p>Your friendly neighborhood Mailbot." + "<p></p>" + '<div class = "container"><img height=250 width=400 src = "https://i.ibb.co/bsmJ7pf/Untitled-copy.png"></div>'
@@ -260,12 +260,12 @@ transporter.sendMail(mailOptions, function(error, info){
 //----------------------------------------
 app.post ("/contactPT" , urlencodedParser,  function(req, res){
 	const transporter = nodemailer.createTransport({
-  host: 'mail.redalertstudio.com',
+  host: 'host',
   port: 465,
   secure: true,
   auth: {
-    user: 'info@redalertstudio.com',
-    pass: 'marisadaniela27' // naturally, replace both with your real credentials or an application-specific password
+    user: 'user',
+    pass: 'password' // naturally, replace both with your real credentials or an application-specific password
   }
 });
 
@@ -282,7 +282,7 @@ var instrument = req.body.instrument;
 const mailOptions = {
   from: email,
   subject: subject,
-  to: "info@redalertstudio.com",
+  to: "mail",
   html: 
 	"<p>Hello Red Alert Studios,</p>" + name + " has tried to contact you regarding the track(s) " + "\"" + track + "\"" + "." + "<p>They would like a track for a different instrument, namely, " + instrument + "." + 
 	"<p>Please reply to the request by contacting: " + number + "<p>You can also send an e-mail to: " + email + "." + "<p>Here is the message:</p>" + "\"" + message + "\"" + "<p>Best Regards," + "<p>Your friendly neighborhood Mailbot." + "<p></p>" + '<div class = "container"><img height=250 width=400 src = "https://i.ibb.co/bsmJ7pf/Untitled-copy.png"></div>'
